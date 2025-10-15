@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class WorkshopService extends Model
 {
+    use HasFactory;
+
     protected $fillable = ['workshop_id','service_type_id','duration_minutes','price'];
 
     protected $casts = [

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
+    use HasFactory;
     public const STATUS = [
         'pending','approved','completed','rejected','canceled_by_user','no_show'
     ];

@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Workshop extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'owner_id','name','city','address','phone','description','is_verified','avg_rating'
     ];
